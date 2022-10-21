@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+@import url('font-awesome.css'); 
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-y: 0;
+}
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.content-img:hover {
+  opacity: 50%;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  font-size: 18px;
+  border: 1px solid grey;
+  border-radius: 0;
+  text-align: left;
+  color: #0066CC;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #0066CC;
+   color: white;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.row, .row > .column {
+  padding: 0;
+}

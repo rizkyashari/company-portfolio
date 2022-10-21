@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
+@import url('font-awesome.css'); 
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-y: 0;
+}
+
+.fontuser {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+  
+.fontuser i{
+    position:absolute;
+    bottom:8px;
+    left:480px;
+    width:10px;
+    height:20px;
+    color: grey;
+}

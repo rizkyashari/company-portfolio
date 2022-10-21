@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Sea Labs Indonesia - Tracker</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="../assets/css/style-tracker.css">
+      <link rel="stylesheet" href="../assets/css/style-button-to-top.css">
+   </head>
+   <body>
+      <head>
+         <div class="card text-center" style="border: none; border-radius: 0;">
+            <div class="card-header" style="padding: 20px; border: none;">
+               <h5><a href="../pages/home.html">Home</a></h5>
+            </div>
+         </div>
+      </head>
+      <main>
+         <div class="card text-center" style="border: none; border-radius: 0;">
+            <div class="card-header" style="padding: 20px; border-radius: none;">
+               <h5 class="fw-bold">Expense Tracker</h5>
+            </div>
+         </div>
+         <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 30px; background-color: var(--bs-card-cap-bg); border: none;">
+            <div class="col">
+               <div class="card h-100" style="border: none; border-radius: 0;">
+               </div>
+            </div>
+            <div class="col">
+               <div class="container">
+                  <div class="card h-100 shadow-lg p-3 mb-5 bg-body rounded" style="border: none;">
+                     <div class="card-body" style="padding-bottom: 0">
+                        <p class="card-text fw-bold">YOUR BALANCE</p>
+                     </div>
+                     <div class="card-body">
+                        <h3 class="card-text fw-bold" id="balance">Rp 0</h3>
+                     </div>
+                     <div class="card-group">
+                        <div class="card" style="border-left: 10px; border-top: 0; border-bottom: 0;">
+                           <div class="card-body">
+                              <h5 class="card-title d-flex justify-content-center fw-bold">INCOME</h5>
+                              <p class="card-text d-flex justify-content-center text-success fs-5 fw-bold" id="incomes">+Rp 0</p>
+                           </div>
+                        </div>
+                        <div class="card" style="border-right: 10px; border-top: 0; border-bottom: 0;">
+                           <div class="card-body">
+                              <h5 class="card-title d-flex justify-content-center fw-bold">EXPENSE</h5>
+                              <p class="card-text d-flex justify-content-center text-danger fs-5 fw-bold" id="expenses">-Rp 0</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card-group" style="padding: 0.75em;">
+                        <div class="card" style="border-radius: 0; border-top: 0; border-right: 0; border-left: 0">
+                           <div class="card-body">
+                              <h5 class="card-title d-flex justify-content-start fw-bold">History</h5>
+                              <div id="history" class="history"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="transaction-history" style="padding: 0 0.75em 0 0.75em" id="history"></div>
+                     <div class="card-group" style="padding: 0.75em;">
+                        <div class="card" style="border-radius: 0; border-top: 0; border-right: 0; border-left: 0">
+                           <div class="card-body">
+                              <h5 class="card-title d-flex justify-content-start fw-bold">New Transaction</h5>
+                           </div>
+                        </div>
+                     </div>
+                     <form class="form" action="#" id="form" style="padding: 0.75em">
+                        <div class="mb-3">
+                           <label for="exampleTransactionDetails1" class="form-label">Transaction Details</label>
+                           <input type="name" id="details" placeholder="Enter Details..." class="form-control" id="exampleTransactionDetails1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                           <label for="exampleAmount1" class="form-label">Amount</label>
+                           <input type="number" id="amount" placeholder="Enter Amount..." class="form-control" id="exampleAmount1" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                           <input type="submit" value="Add Transaction" name="Submit" class="btn-submit bg-dark text-white">
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card h-100" style="border: none; border-radius: 0;">
+               </div>
+            </div>
+         </div>
+         <div>
+      </main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"><h3 class="fs-4">^</h3></button>
+      <script src="../assets/js/script-button-to-top.js"></script>
+      <script src="../assets/js/script-tracker.js"></script>
+   </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    font-family: 'Jetbrains', monospace;
+}
+
+a {
+    color: purple;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.card-header {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    margin-bottom: 0;
+    color: var(--bs-card-cap-color);
+    background-color: var(--bs-card-cap-bg);
+    border-bottom: none;
+}
+
+.card-body {
+    flex: 0 0 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+
+.history div {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.history div.plus {
+    border-right: 5px solid green;
+}
+
+.history div.minus {
+    border-right: 5px solid red;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.history div:hover .delete-btn {
+    opacity: 1;
+}
